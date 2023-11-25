@@ -1,5 +1,5 @@
 // Jenkinsfile
-@Library('your-shared-library') _
+@Library('test-python-lib') _
 
 import myFunctions
 
