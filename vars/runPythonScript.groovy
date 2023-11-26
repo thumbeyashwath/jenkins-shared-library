@@ -13,9 +13,16 @@
 
 
 // runPythonScript.groovy
+// def call() {
+//     script {
+//         def pythonScript = libraryResource('org/example/scripts/hello.py')
+//         sh "python3 $pythonScript"
+//     }
+// }
+
+// runPythonScript.groovy
 def call() {
     script {
-        def pythonScript = libraryResource('org/example/scripts/hello.py')
-        sh "python3 $pythonScript"
+        org.example.PythonScriptExecutor.runPythonScript()
     }
 }
