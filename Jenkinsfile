@@ -10,7 +10,8 @@ pipeline {
         stage('Example Stage') {
             steps {
                 script {
-                    myFunctions.callPythonScript()
+                 //   myFunctions.callPythonScript()
+                    myPythonScript.runPythonScript()
                 }
             }
         }
