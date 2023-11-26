@@ -8,5 +8,5 @@
 // }
 
 def runPythonScript() {
-    sh 'python ${libraryResource("scripts/hello.py")}'
+    sh 'python3 ${libraryResource("scripts/hello.py")}'
 }
